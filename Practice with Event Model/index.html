@@ -5,54 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
-    <script src="js/script.js">
-         window.document.addEventListener("DOMContentLoaded", init);
-        function init() {
+    <script src="js/script.js"></script>
+    <script>
+    window.document.addEventListener("DOMContentLoaded", init);
+    function init() {
+        window.document.getElementById("myOtherButton3").addEventListener("click", function () {              
             "use strict";
-                var myOtherButton3 = window.document.getElementById("myOtherButton3")
-                myOtherButton3.addEventListener("click", function() {
-                window.alert("I have been clicked..(From Head tag)")
-            });
-        }
-    </script> 
+            window.alert("I have been clicked..(From Header Tag)");
+        });
+    }
+    </script>
 </head>
 <body>
     
     <section>
-        <p>Old ways of operating HTML attribute method</p>
+        <p>Old School Method</p>
         <button onclick="displayMessage()">Show Message</button>
     </section>
-
-    <hr>
 
     <section>
         <p>Element Property method</p>
         <button id="myButton">Show Message</button>
     </section>
 
-    <hr>
-
     <section>
         <p>Event Listener through User Defined Function</p>
         <button id="myOtherButton">Show Message</button>
     </section>
 
-    <hr>
-
     <section>
         <p>Event Listener through Callback Function</p>
         <button id="myOtherButton2">Show Message</button>
     </section>
-    
-    <hr>
-
+ 
     <section>
-        <p>Event Listener method</p>
+        <p>Event Listener method -- From Head Tag</p>
         <button id="myOtherButton3">Show Message</button>
     </section>
-    
-    <hr>
 
-   
 </body>
 </html>
